@@ -9,25 +9,15 @@ public class GestionnaireServices {
 	}
 	
 	public void indAppel(Etage lEtage){
-		//
-		//
-		System.out.println("Cabine à l'étage" + this.laCabine.getEtage().getNumero());
+		System.out.println("Cabine ï¿½ l'ï¿½tage" + this.laCabine.getEtage().getNumero());
 		if(laCabine.getEtatCabine().equals(EEtatCabine.ARRETEFERME)){
-			//
 			this.memoriserAppel(lEtage, ETypeService.APPEL);
-			//
 			laCabine.reqDeplacementVers(lEtage);
 		}
-		//
-		//
 	}
 	
 	private void memoriserAppel(Etage lEtage, ETypeService leType){
-		//
-		//
 		leService = new Service(lEtage, leType);
-		//
-		//
 	}
 	
 	public void indNouvelEtage(Etage nouvelEtage){
@@ -35,9 +25,9 @@ public class GestionnaireServices {
 	}
 	
 	public boolean reqcompareEtage(Etage nouvelEtage){
-		System.out.println("On arrive à l'étage" + nouvelEtage.getNumero());
+		System.out.println("On arrive ï¿½ l'ï¿½tage" + nouvelEtage.getNumero());
 		if(nouvelEtage.equals(leService.getEtage())){
-			System.out.println("On arrête l'ascenceur");
+			System.out.println("On arrï¿½te l'ascenceur");
 			return true;
 		}
 		System.out.println("On continue de monter");
