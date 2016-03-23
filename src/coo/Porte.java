@@ -9,7 +9,12 @@ public class Porte {
 		 this.numero = numero;
 	 }
 	 
-	//On doit avoir un accesseur pour pouvoir donner l'état d'ouverture de la porte dans la méthode getEtatCabine dans la classe Cabine
+	 public void ouvrir(){
+		 System.out.println("Ouverture de la porte nÂ°" + this.numero);
+		 this.etatOuverture = EEtatOuverture.OUVERT;
+	 }
+	 
+	//On doit avoir un accesseur pour pouvoir donner l'ï¿½tat d'ouverture de la porte dans la mï¿½thode getEtatCabine dans la classe Cabine
 	 public EEtatOuverture getEtatOuverture(){
 		 return this.etatOuverture;
 	 }

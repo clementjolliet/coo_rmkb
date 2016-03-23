@@ -28,6 +28,8 @@ public class GestionnaireServices {
 		System.out.println("On arrive à l'étage" + nouvelEtage.getNumero());
 		if(nouvelEtage.equals(leService.getEtage())){
 			System.out.println("On arrète l'ascenceur");
+			laCabine.ouvrirPorte();
+			nouvelEtage.ouvrirPorte();
 			return true;
 		}
 		System.out.println("On continue de monter");

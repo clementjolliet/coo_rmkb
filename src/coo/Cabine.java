@@ -54,12 +54,16 @@ public class Cabine {
 		 return;
 	 }
 	 
-	 public Etage getEtage(){ // Rajouté uniquement pour pouvoir print certains messages
+	 public Etage getEtage(){ // Rajoutï¿½ uniquement pour pouvoir print certains messages
 		 return this.etageCourant;
 	 }
 	 
-	 private void setEtage(Etage nouvelEtage){ // Correspond sur les diagrammes de conception à la méthode metAJour
+	 private void setEtage(Etage nouvelEtage){ // Correspond sur les diagrammes de conception ï¿½ la mï¿½thode metAJour
 		 etageCourant = nouvelEtage;
+	 }
+	 
+	 public void ouvrirPorte(){
+		 this.porteCabine.ouvrir();
 	 }
 	 
 	 public void indNouvelEtage(Etage nouvelEtage){
