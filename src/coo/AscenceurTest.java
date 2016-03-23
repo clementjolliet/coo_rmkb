@@ -4,10 +4,10 @@ public class AscenceurTest {
 
 	public static void main(String[] args) {
 		
-		// dans l'immeuble les 4 étages sont 0,1,2,3 
+		// dans l'immeuble les 4 ï¿½tages sont 0,1,2,3 
 		// 5 portes : la cabine et les 4etages
-		// 8 boutons , seulement 4 a coder, ceuxdes étages
-		// les messages renvoyés au harware sont simulés par des print
+		// 8 boutons , seulement 4 a coder, ceuxdes ï¿½tages
+		// les messages renvoyï¿½s au harware sont simulï¿½s par des print
 		
 		
 		//instanciation des portes OK
@@ -26,9 +26,9 @@ public class AscenceurTest {
 		
 		GestionnaireServices leGestionnaireServices = new GestionnaireServices();
 		
-		// instanciation des étages
+		// instanciation des ï¿½tages
 		
-		Etage etage0 = new Etage(0, leGestionnaireServices); // A rajouter dans gestionnaireService la méthode qui l'enregistre dans l'attribut de l'étage
+		Etage etage0 = new Etage(0, leGestionnaireServices); // A rajouter dans gestionnaireService la mï¿½thode qui l'enregistre dans l'attribut de l'ï¿½tage
 		Etage etage1 = new Etage(1, leGestionnaireServices);
 		Etage etage2 = new Etage(2, leGestionnaireServices);
 		Etage etage3 = new Etage(3, leGestionnaireServices);
@@ -40,7 +40,7 @@ public class AscenceurTest {
 		Bouton boutonetage2 = new Bouton(etage2, 2);
 		Bouton boutonetage3 = new Bouton(etage3, 3);
 		
-		// instanciation de la cabine à l'étage 1
+		// instanciation de la cabine ï¿½ l'ï¿½tage 1
 		
 		Cabine laCabine = new Cabine(etage1, porteCabine, entrainementCabine, 200, leGestionnaireServices); // OK
 		
@@ -50,11 +50,11 @@ public class AscenceurTest {
 		
 		boutonetage3.indPression();
 		
-		// nouvelle étage
+		// nouvelle ï¿½tage
 		
 		entrainementCabine.indNouvelEtage(etage2);
 		
-		
+		entrainementCabine.indNouvelEtage(etage3);
 		
 	}
 
