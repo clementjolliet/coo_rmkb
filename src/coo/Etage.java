@@ -16,15 +16,10 @@ public class Etage {
 	}*/
 	
 	public void indPression(Bouton leBouton){
-		//
-		//
 		gestionService.indAppel(this);
-		//
-		//
-		return;
 	}
 	
-	//On doit avoir un accesseur pour pouvoir donner le numero de l'étage dans la méthode reqDeplacementVers dans la classe Cabine
+	//On doit avoir un accesseur pour pouvoir donner le numero de l'ï¿½tage dans la mï¿½thode reqDeplacementVers dans la classe Cabine
 	public int getNumero(){
 		return this.numEtage;
 	}
