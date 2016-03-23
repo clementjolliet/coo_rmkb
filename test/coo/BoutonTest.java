@@ -6,6 +6,15 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import COO.Cabine;
+import COO.EEtatCabine;
+import COO.EEtatDeplacement;
+import COO.EEtatOuverture;
+import COO.Entrainement;
+import COO.Etage;
+import COO.GestionnaireServices;
+import COO.Porte;
+
 public class BoutonTest {
 
 	@Before
