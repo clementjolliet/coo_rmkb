@@ -18,16 +18,34 @@ public class CabineTest {
 	public void tearDown() throws Exception {
 	}
 	
+	//Cabine au premier étage, nous sommes au 3, et nous appelons l'ascenseur
 	@Test
 	public void testGetEtatCabine(){
 		Porte porte = new Porte(EEtatOuverture.FERME, 3);
 		Porte porte1 = new Porte(EEtatOuverture.FERME, 1);
 		GestionnaireServices gestserv = new GestionnaireServices();
 		Etage etage = new Etage(3, gestserv, porte);
+		Etage etage1 = new Etage(1, gestserv, porte1);
 		Entrainement entrain = new Entrainement(EEtatDeplacement.ARRETE, 1);
 		Cabine cabine = new Cabine(etage, porte1, entrain, 200, gestserv);
 	
 		assertEquals(cabine.getEtatCabine(),EEtatCabine.ARRETEFERME);
 	}
 
+	//Cabine change d'étage
+	@Test
+	public void testIndNouvelEtage(){
+		Porte porte = new Porte(EEtatOuverture.FERME, 3);
+		Porte porte1 = new Porte(EEtatOuverture.FERME, 1);
+		GestionnaireServices gestserv = new GestionnaireServices();
+		Etage etage = new Etage(3, gestserv, porte);
+		Etage etage1 = new Etage(1, gestserv, porte1);
+		Entrainement entrain = new Entrainement(EEtatDeplacement.ARRETE, 1);
+		Cabine cabine = new Cabine(etage1, porte1, entrain, 200, gestserv);
+		
+		cabine.indNouvelEtage(etage);
+		
+		assertEquals(cabine.getEtage().getNumero(), 3);
+
+	}
 }
