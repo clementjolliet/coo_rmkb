@@ -17,8 +17,33 @@ public class EntrainementTest {
 	}
 
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void testReqMonter(){
+		Entrainement entrain = new Entrainement (EEtatDeplacement.ARRETE, 1);
+		
+		entrain.reqMonter();
+		
+		assertEquals(entrain.getEtatDeplacement(), EEtatDeplacement.EN_MONTEE);
+		
+	}
+	
+	@Test
+	public void testReqDescendre(){
+		Entrainement entrain = new Entrainement (EEtatDeplacement.ARRETE, 2);
+		
+		entrain.reqDescendre();
+		
+		assertEquals(entrain.getEtatDeplacement(), EEtatDeplacement.EN_DESCENTE);
+		
+	}
+	
+	@Test
+	public void testStop(){
+		Entrainement entrain = new Entrainement (EEtatDeplacement.EN_DESCENTE, 2);
+		
+		entrain.reqStop();
+		
+		assertEquals(entrain.getEtatDeplacement(), EEtatDeplacement.ARRETE);
+		
 	}
 
 }

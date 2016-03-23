@@ -18,7 +18,10 @@ public class PorteTest {
 
 	@Test
 	public void test() {
-		fail("Not yet implemented");
+		Porte porte = new Porte(EEtatOuverture.FERME, 3);
+		
+		porte.ouvrir();
+		assertEquals(porte.getEtatOuverture(), EEtatOuverture.OUVERT);
 	}
 
 }

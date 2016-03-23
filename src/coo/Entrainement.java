@@ -29,9 +29,8 @@ public class Entrainement {
 	 }
 	 
 	 public void reqDescendre(){
-		 //
-		 //
-		 //
+		 System.out.println("envoi du message 'descendre' au hardware");
+			this.etatDeplacement = EEtatDeplacement.EN_DESCENTE;
 		 return;
 	 }
 

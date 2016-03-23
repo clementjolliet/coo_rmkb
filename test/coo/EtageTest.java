@@ -1,0 +1,14 @@
+package coo;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class EtageTest {
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

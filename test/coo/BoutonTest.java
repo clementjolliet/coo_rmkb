@@ -5,15 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-
-import COO.Cabine;
-import COO.EEtatCabine;
-import COO.EEtatDeplacement;
-import COO.EEtatOuverture;
-import COO.Entrainement;
-import COO.Etage;
-import COO.GestionnaireServices;
-import COO.Porte;
+import coo.*;
 
 public class BoutonTest {
 
@@ -25,8 +17,6 @@ public class BoutonTest {
 	public void tearDown() throws Exception {
 	}
 
-	@Test
-	public void indPressionTest() {
-	}
+
 
 }
