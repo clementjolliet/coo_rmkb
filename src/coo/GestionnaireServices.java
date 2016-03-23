@@ -9,7 +9,7 @@ public class GestionnaireServices {
 	}
 	
 	public void indAppel(Etage lEtage){
-		System.out.println("Cabine � l'�tage" + this.laCabine.getEtage().getNumero());
+		System.out.println("Cabine à l'étage" + this.laCabine.getEtage().getNumero());
 		if(laCabine.getEtatCabine().equals(EEtatCabine.ARRETEFERME)){
 			this.memoriserAppel(lEtage, ETypeService.APPEL);
 			laCabine.reqDeplacementVers(lEtage);
@@ -25,9 +25,9 @@ public class GestionnaireServices {
 	}
 	
 	public boolean reqcompareEtage(Etage nouvelEtage){
-		System.out.println("On arrive � l'�tage" + nouvelEtage.getNumero());
+		System.out.println("On arrive à l'étage" + nouvelEtage.getNumero());
 		if(nouvelEtage.equals(leService.getEtage())){
-			System.out.println("On arr�te l'ascenceur");
+			System.out.println("On arràte l'ascenceur");
 			return true;
 		}
 		System.out.println("On continue de monter");

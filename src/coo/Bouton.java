@@ -6,19 +6,14 @@ public class Bouton {
 	private Etage lEtage;
 	
 	public Bouton (Etage lEtage, int numero){
-		this.lEtage =lEtage;
+		this.lEtage = lEtage;
 		this.numero = numero;
 		this.etatBouton = EEtatBouton.EN_SERVICE;
 	}
 	
 	public void indPression(){
-		//
-		//
-		System.out.println("Pression à l'étage" + this.lEtage.getNumero());
+		System.out.println("Pression Ã  l'Ã©tage" + this.numero);
 		lEtage.indPression(this);
-		//
-		//
-		return;
 	}
 	
 	public int getNumBouton(){
