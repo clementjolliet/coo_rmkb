@@ -27,7 +27,7 @@ public class GestionnaireServices {
 	public boolean reqcompareEtage(Etage nouvelEtage){
 		System.out.println("On arrive à l'étage" + nouvelEtage.getNumero());
 		if(nouvelEtage.equals(leService.getEtage())){
-			System.out.println("On arràte l'ascenceur");
+			System.out.println("On arrète l'ascenceur");
 			return true;
 		}
 		System.out.println("On continue de monter");

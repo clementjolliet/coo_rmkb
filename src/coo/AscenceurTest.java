@@ -50,7 +50,7 @@ public class AscenceurTest {
 		
 		boutonetage3.indPression();
 		
-		// nouvelle �tage
+		// nouvelle étage
 		
 		entrainementCabine.indNouvelEtage(etage2);
 		
