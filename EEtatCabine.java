@@ -1,5 +1,0 @@
-package COO;
-
-public enum EEtatCabine {
-	ARRETEFERME, ARRETEOUVERT, EN_MONTEEFERME, EN_DESCENTEFERME;
-}
