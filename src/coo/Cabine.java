@@ -49,6 +49,9 @@ public class Cabine {
 		 else if (etageDemande.getNumero() < etageCourant.getNumero()){
 			 entrainementCabine.reqDescendre();
 		 }
+		 else if(etageDemande.getNumero() == etageCourant.getNumero()){
+			 entrainementCabine.reqStop();
+		 }
 		 //
 		 //
 		 return;
@@ -63,7 +66,7 @@ public class Cabine {
 	 }
 	 
 	 public void ouvrirPorte(){
-		 this.porteCabine.ouvrir();
+		this.porteCabine.ouvrir();
 	 }
 	 
 	 public void indNouvelEtage(Etage nouvelEtage){

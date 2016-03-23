@@ -18,9 +18,6 @@ public class BoutonTest {
 
 	@Test
 	public void indPressionTest() {
-		GestionnaireServices gestSrvc = new GestionnaireServices();
-		Etage etage = new Etage(1, gestSrvc);
-		Bouton btn = new Bouton(etage, 1);
 	}
 
 }
