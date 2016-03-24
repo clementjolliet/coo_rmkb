@@ -1,6 +1,6 @@
 package coo;
 
-public class AscenceurTest {
+public class Ascenceur {
 
 	public static void main(String[] args) {
 		
