@@ -20,5 +20,20 @@ public class EntrainementTest {
 	public void test() {
 		fail("Not yet implemented");
 	}
+	
+	@Test
+	public void testIndNouvelEtage(){
+		Porte porte = new Porte(EEtatOuverture.FERME, 2);
+		GestionnaireServices gestserv = new GestionnaireServices();
+		Etage etage = new Etage(2, gestserv, porte);
+		Entrainement entrain = new Entrainement(EEtatDeplacement.ARRETE, 1);
+		Cabine cabine = new Cabine(etage, porte, entrain, 200, gestserv);
+		
+		Etage etageTest = new Etage(2, gestserv, porte);
+		entrain.indNouvelEtage(etageTest);
+		assertEquals(cabine.getEtage(),etageTest);
+	 }
+	
+
 
 }
