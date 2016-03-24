@@ -26,8 +26,16 @@ public class Entrainement {
 	 public void reqStop(){
 		 System.out.println("envoi du message 'stop' au hardware");
 			this.etatDeplacement = EEtatDeplacement.ARRETE;
+
+	 }
+	 
+	 public void reqDescendre(){
+		 //
+		 //
+		 //
 		 return;
- 	 }
+	 }
+
 
 
 	 public void indNouvelEtage(Etage nouvelEtage){
