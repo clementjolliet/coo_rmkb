@@ -43,6 +43,9 @@ public class CabineTest {
 		Entrainement entrain = new Entrainement(EEtatDeplacement.ARRETE, 1);
 		Cabine cabine = new Cabine(etage1, porte1, entrain, 200, gestserv);
 		
+		Bouton boutonetage3 = new Bouton(etage, 12);
+		boutonetage3 .indPression();
+		
 		cabine.indNouvelEtage(etage);
 		
 		assertEquals(cabine.getEtage().getNumero(), 3);
