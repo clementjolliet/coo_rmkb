@@ -18,22 +18,17 @@ public class Entrainement {
 		 return etatDeplacement;
 	 }
 	 
-	 public void reqMonter(){
-		System.out.println("envoi du message 'monter' au hardware");
+ 	 public void reqMonter(){
+ 		System.out.println("envoi du message 'monter' au hardware");
 		this.etatDeplacement = EEtatDeplacement.EN_MONTEE;
 	 }
 	 
 	 public void reqStop(){
 		 System.out.println("envoi du message 'stop' au hardware");
 			this.etatDeplacement = EEtatDeplacement.ARRETE;
-	 }
-	 
-	 public void reqDescendre(){
-		 //
-		 //
-		 //
 		 return;
-	 }
+ 	 }
+
 
 	 public void indNouvelEtage(Etage nouvelEtage){
 		 //
